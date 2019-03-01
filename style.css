@@ -30,7 +30,7 @@ body {
   color:black;
 }
 .child:hover{
-  color:#077c9f;
+  color:pink;
   transition: all 600ms;
 }
 .cosmo {
