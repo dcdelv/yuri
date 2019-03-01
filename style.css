@@ -23,22 +23,99 @@ body {
 }
 
 .circle-container img { display: block; width: 100%; }
-
 /*iconos*/
 .child {
-  margin-left: 10em;
-  margin-top: 10em;
+  margin-left: 7em;
+  margin-top: 9.7em;
+  color:black;
+}
+.child:hover{
+  color:#077c9f;
+  transition: all 600ms;
 }
 .cosmo {
-  padding-left:24em;
+  padding-left:21em;
   margin-top:-4.6em;
+  color:black;
+}
+.cosmo:hover{
+  color:#077c9f;
+  transition: all 600ms;
 }
 .rocket {
-  padding-left: 50em;
+  padding-left: 53em;
   margin-top:-4.6em;
+  color:black;
+}
+.rocket:hover{
+  color:#077c9f;
+  transition: all 600ms;
+}
+.earth {
+  padding-left: 67em;
+  margin-top: -4.5em;
+  color:black;
+}
+.earth:hover{
+  color:#077c9f;
+  transition: all 600ms;
+}
+/*POP UP*/
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
 }
 
-.earth {
-  padding-left: 64em;
-  margin-top: -4.6em;
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #f5f5dc;
+  border-radius: 5px;
+  width: 50%;
+  height:50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
 }
