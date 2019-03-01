@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <head>
+    <title>Поехали!</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link rel="stylesheet" href="grt-youtube-popup.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="fondo">
+      <h1 class="titulo">Yuri Gagarin</h1>
+
+
+<div class='circle-container'>
+<div class="circle-a"><span class="youtube-link" youtubeid="9VfYOwC9uFc"><img src="./yuriya.png"</span>
+</div>
+</div>
+
+<!-- iconos -->
+<div class="child"><i class="fas fa-baby fa-5x"></i></div>
+<div class="cosmo"><i class="fas fa-user-astronaut fa-5x"></i></div>
+<div class="rocket"><i class="fas fa-rocket fa-5x"></i></div>
+<div class="earth"><i class="fas fa-globe-europe fa-5x"></i></div>
+<!-- Jquery -->
+
+
+   <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+<!-- GRT Youtube Popup -->
+
+<script src="grt-youtube-popup.js"></script>
+<script>
+  // Demo video 1
+  $(".youtube-link").grtyoutube({
+    autoPlay:true,
+    theme: "dark"
+  });
+
+  // Demo video 2
+  $(".youtube-link-dark").grtyoutube({
+    autoPlay:false,
+    theme: "light"
+  });
+</script>
+
+  </body>
+</html>
