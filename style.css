@@ -77,10 +77,11 @@ h2 {
   padding-bottom: 1em;
 }
 .content {
-  font-size: 0.9em;
+  font-size:1em;
   font-family: 'Roboto', sans-serif;
 }
-.overlay {
+
+.overlay{
   position: fixed;
   top: 0;
   bottom: 0;
@@ -95,14 +96,13 @@ h2 {
   visibility: visible;
   opacity: 1;
 }
-
 .popup {
   margin: 70px auto;
   padding: 20px;
   background: #F6F3EE;
   border-radius: 5px;
   width: 35%;
-  height:42%;
+  height:30%;
   position: relative;
   transition: all 5s ease-in-out;
 }
