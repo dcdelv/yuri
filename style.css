@@ -79,6 +79,7 @@ h2 {
 .content {
   font-size:1em;
   font-family: 'Roboto', sans-serif;
+  margin-top: 0.5em;
 }
 
 .overlay{
